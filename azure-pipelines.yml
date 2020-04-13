@@ -59,6 +59,8 @@ jobs:
       git clone $(clone_url) $(checkout)
       cd $(checkout)
       git checkout $(commit)
+      git submodule init
+      git submodule update
       python -m pip install -U pip
       pip install -r requirements.txt
       python setup.py sdist
@@ -257,6 +259,8 @@ jobs:
       git clone $(clone_url) $(checkout)
       cd $(checkout)
       git checkout $(commit)
+      git submodule init
+      git submodule update
       pip install -Ur requirements.txt
       python setup.py bdist_wheel
     condition: and(eq(variables['os'], 'win'), eq(variables['active'], 1))

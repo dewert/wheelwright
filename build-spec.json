@@ -1,0 +1,1 @@
+{"clone-url": "https://github.com/dewert/python-rtmidi.git", "package-name": "python-rtmidi", "commit": "1.4.0", "options": {"llvm": false, "py35": false}, "upload-to": {"type": "github-release", "repo-id": "dewert/wheelwright", "release-id": "python-rtmidi-1.4.0-2"}}
